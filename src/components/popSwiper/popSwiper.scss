@@ -1,0 +1,45 @@
+.pop {
+  margin: 10PX 0;
+  .pop-container {
+    padding: 5PX 15PX;
+    background-color: #fff;
+    .title {
+      font-size: 14PX;
+      color: rgb(103, 103, 103);
+      padding: 5PX 0;
+      margin: 3PX 0;
+      text-align: left;
+      text-indent: 12PX;
+      border-left: 3PX solid #2a579a;
+    }
+    .hr {
+      margin: 8PX 0;
+      border: 1px solid rgb(240, 239, 244);
+    }
+    .swiper-container {
+      height: 62PX;
+      margin: 10PX 0;
+      overflow: hidden;
+      .swiper-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        .swiper-img, img {
+          width: 62PX;
+          height: 62PX !important;
+          vertical-align: middle;
+        }
+        .right {
+          flex: 1;
+          display: flex;
+          font-size: 12PX;
+          color: rgb(108, 108, 108);
+          margin-left: 20PX;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+}

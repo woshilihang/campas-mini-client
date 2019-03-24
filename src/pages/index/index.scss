@@ -1,0 +1,37 @@
+$item-bg: '#f0eff4';
+$item-font-color: #c4c4c4;
+
+.index {
+  background-color: rgb(240, 239, 244);
+  .search-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding: 5PX 10PX;
+    color: #333;
+    .input-Wrapper {
+      position: relative;
+      flex: 1;
+      margin-right: 8PX;
+      .search-icon {
+        position: absolute;
+        top: 5PX;
+        left: 8PX;
+        width: 20PX;
+        height: 20PX;
+      }
+      .search-input {
+        height: 30PX;
+        background-color: #ffffff;
+        border-radius: 4PX;
+        text-align: center;
+        font-size: 15PX;
+      }
+    }
+    .leave-msg {
+      width: 30PX;
+      height: 30PX;
+    }
+  }
+}

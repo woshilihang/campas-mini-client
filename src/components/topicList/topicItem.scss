@@ -1,0 +1,61 @@
+.topic-topicItem {
+  margin-top: 100PX;
+  background-color: #ffffff;
+  padding: 10PX;
+  overflow: hidden;
+  font-size: 12PX;
+  color: rgb(75, 75, 75);
+  .head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .left {
+      flex: 1;
+      .head-img {
+        float: left;
+        width: 40PX;
+        height: 40PX;
+        border-radius: 50%;
+      }
+      .info {
+        margin-left: 60PX;
+        font-size: 13PX;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .nickname, .time {
+          padding: 3PX 0;
+        }
+      }
+    }
+    .money {
+      margin-right: 10PX;
+      font-size: 18PX;
+      color: red;
+    }
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    .content-img {
+      width: 85PX;
+      height: 85PX;
+    }
+    .content-info {
+      line-height: 32px;
+      font-size: 13PX;
+      padding: 5PX 0;
+      color: black;
+    }
+  }
+  .foot {
+    line-height: 30PX;
+    font-size: 13PX;
+    color: red;
+    border-top: 2px solid rgb(240, 239, 244);
+  }
+}
+.topic-topicItem:nth-child(1) {
+  margin-top: 0;
+}

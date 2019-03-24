@@ -1,0 +1,19 @@
+.search-type-container {
+  padding-top: 42PX;
+
+  .tagWrapper {
+    font-size: 18px;
+    height: 610px;
+    box-sizing: border-box;
+
+    .tagList {
+      display: flex;
+      flex-direction: rows;
+      flex-wrap: wrap;
+
+      .tagItem {
+        margin: 8PX 8PX 0;
+      }
+    }
+  }
+}
