@@ -76,7 +76,7 @@ export function addEvent(obj, evName, callback) {
 
 // 公共提示
 export function showMessage(msg) {
-  Taro.showMessage({
+  Taro.showToast({
     title: msg,
     icon: 'none',
     duration: 1500

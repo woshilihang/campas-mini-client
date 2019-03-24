@@ -23,10 +23,13 @@ class App extends Component {
 
   config = {
     pages: [
+      'pages/authorization/authorization',
+      'pages/login/login',
       'pages/index/index',
       'pages/search/search',
       'pages/publish/publish',
-      'pages/user/user'
+      'pages/user/user',
+      
     ],
     window: {
       backgroundTextStyle: 'light',

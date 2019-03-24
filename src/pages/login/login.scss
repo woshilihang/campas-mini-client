@@ -1,0 +1,30 @@
+.page {
+  .img {
+    display: block;
+    width: 320PX;
+    height: 120PX;
+    margin: 0 auto;
+    margin-top: 60PX;
+  }
+  .page-form {
+    padding: 0 6%;
+    width: 88%;
+    margin-top: 70PX;
+    .page-form-name {
+      border-bottom: 1PX solid rgb(45, 89, 155);
+      // margin-left: 0;
+    }
+    .page-form-submit {
+      text-align: center;
+      width: 100%;
+      height: 50PX;
+      line-height: 50PX;
+      margin: 0 auto;
+      margin-top: 50PX;
+      font-weight: 600;
+      background-color: rgb(45, 89, 155);
+      border-radius: 50PX;
+      color: #ffffff;
+    }
+  }
+}

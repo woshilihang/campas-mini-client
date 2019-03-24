@@ -1,0 +1,21 @@
+.page {
+  .img {
+    display: block;
+    width: 320PX;
+    height: 120PX;
+    margin: 0 auto;
+    margin-top: 150PX;
+  }
+  .page-button {
+    width: 86%;
+    height: 56PX;
+    line-height: 56PX;
+    margin: 0 7%;
+    margin-top: 150PX;
+    font-weight: 600;
+    background-color: rgb(45, 89, 155);
+    // background-color: rgb(35, 31, 32);
+    border-radius: 50PX;
+    color: #ffffff;
+  }
+}
