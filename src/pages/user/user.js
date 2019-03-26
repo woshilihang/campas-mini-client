@@ -56,8 +56,38 @@ class User extends Component {
     console.log('到底了');
   }
 
-
+  
   // 跳转各个功能呢个相应界面
+
+  showSignOut() {
+    Taro.navigateTo({
+      url: '/pages/login/login'
+    })
+  }
+
+  showMyPublish() {
+    Taro.navigateTo({
+      url: '/pages/myPublish/myPublish'
+    })
+  }
+
+  showCollection() {
+    Taro.navigateTo({
+      url: '/pages/collection/collection'
+    })
+  }
+
+  showVersion() {
+    Taro.navigateTo({
+      url: '/pages/version/version'
+    })
+  }
+
+  showAbout() {
+    Taro.navigateTo({
+      url: '/pages/about/about'
+    })
+  }
 
   render () {
     return (
@@ -67,27 +97,27 @@ class User extends Component {
           <View>{this.state.userName}</View>
         </View>
         <View className='user-admin'>
-          <View className='user-admin-item' >
+          <View className='user-admin-item' onClick={this.showCollection.bind(this)} >
             <Image src={collection} />
             <Text className='text'>我喜欢的</Text>
             <Image className='right' src={rightArrow} />
           </View>
-          <View className='user-admin-item' >
+          <View className='user-admin-item' onClick={this.showMyPublish.bind(this)} >
             <Image src={myPublish} />
             <Text className='text'>我发布的</Text>
             <Image className='right' src={rightArrow} />
           </View>
-          <View className='user-admin-item' >
+          <View className='user-admin-item' onClick={this.showVersion.bind(this)} >
             <Image src={version} />
             <Text className='text'>版本信息</Text>
             <Image className='right' src={rightArrow} />
           </View>
-          <View className='user-admin-item' >
+          <View className='user-admin-item' onClick={this.showAbout.bind(this)}>
             <Image src={about} />
             <Text className='text'>关于</Text>
             <Image className='right' src={rightArrow} />
           </View>
-          <View className='user-admin-item' >
+          <View className='user-admin-item' onClick={this.showSignOut.bind(this)} >
             <Image src={signOut} />
             <Text className='text'>退出登录</Text>
             <Image className='right' src={rightArrow} />

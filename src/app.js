@@ -23,13 +23,17 @@ class App extends Component {
 
   config = {
     pages: [
+      'pages/publish/publish',
       'pages/index/index',
       'pages/authorization/authorization',
       'pages/login/login',
-     
       'pages/search/search',
-      'pages/publish/publish',
+   
       'pages/user/user',
+      'pages/version/version',
+      'pages/about/about',
+      'pages/myPublish/myPublish',
+      'pages/collection/collection'
       
     ],
     window: {

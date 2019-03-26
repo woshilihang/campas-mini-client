@@ -1,0 +1,45 @@
+.publish {
+  width: 100%;
+  background-color:#f0eff4;
+  &-section {
+    margin-bottom: 10PX;
+    font-size: 15PX;
+    background-color: #ffffff;
+    &-item {
+      padding: 12PX 3%;
+      border-bottom: 1PX solid #d6e4ef;
+      display: flex;
+      &-title {
+        padding: 0 25PX 0 15PX;
+        border-right: 1PX solid #d6e4ef;
+      }
+      .publish-section-input, picker {
+        flex: 1;
+        padding-left: 18PX;
+      }
+      &-submit {
+        width: 100%;
+        text-align: center;
+        height: 50PX;
+        line-height: 50PX;
+        font-weight: 600;
+        background-color: rgb(45, 89, 155);
+        border-radius: 50PX;
+        color: #ffffff;
+      }
+    }
+    .addImg {
+      position: relative;
+      padding-bottom: 78PX;
+      .select-img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+    }
+    // &-item:last-child {
+    //   border-bottom: none;
+    // }
+  }
+}
