@@ -19,7 +19,9 @@ import TopicList from '../../components/topicList/topicList';
 class Index extends Component {
 
   config = {
-    navigationBarTitleText: '花椒二手交易平台'
+    navigationBarTitleText: '花椒二手交易平台',
+    enablePullDownRefresh: true,
+    onReachBottomDistance: 50, // 用户下滑到距离底部还有50PX的时候出发上滑加载功能
   }
 
   componentWillReceiveProps (nextProps) {
@@ -41,20 +43,29 @@ class Index extends Component {
     })
   }
 
-  // 实现下拉加载
-  onScrollToLower() {
-    console.log('到底了');
+  // // 实现下拉加载
+  // onScrollToLower() {
+  //   console.log('到底了');
+  // }
+
+  // // 实现上拉刷新
+  // onScrollToUpper() {
+  //   console.log('到顶了');
+  // }
+
+  onPullDownRefresh() {
+    console.log('执行了下拉刷新');
   }
 
-  // 实现上拉刷新
-  onScrollToUpper() {
-    console.log('到顶了');
+  onReachBottom() {
+    console.log('到底了');
   }
 
   render () {
     const { banner } = this.props;
     return (
-      <ScrollView className='index' style={{height: '650PX'}} onScrollToLower={this.onScrollToLower.bind(this)} scrollY='true'>
+      <View className='index'>
+       {/* <ScrollView className='index' style={{height: '650PX'}} onScrollToLower={this.onScrollToLower.bind(this)} scrollY='true'> */}
         <View className='search-box'>
           <View className='input-Wrapper'>
             <Image alt='search' className='search-icon' src={require('../../assets/img/search.png')} />
@@ -65,7 +76,8 @@ class Index extends Component {
         <MySwiper banner={banner} />
         <PopSwiper banner={banner} />
         <TopicList />
-      </ScrollView>
+      {/* </ScrollView> */}
+      </View>
     )
   }
 }

@@ -1,0 +1,49 @@
+.user {
+  &-title {
+    margin-top: 40PX;
+    text-align: center;
+    .at-avatar {
+      margin: 0 auto;
+      margin-bottom: 20PX;
+    }
+    view {
+      margin-top: 20PX;
+      font-weight: 500;
+      font-size: 20PX;
+      color: #333744;
+      letter-spacing: 0;
+    }
+  }
+  &-admin {
+    width: 94%;
+    margin: 0 auto;
+    margin-top: 50PX;
+    &-item {
+      position: relative;
+      margin-top: 15PX;
+      height: 50PX;
+      line-height: 50PX;
+      border-radius: 16PX;
+      box-shadow: 0 6PX 18PX 0 rgba(141, 151, 168, 0.21);
+      image {
+        width: 24PX;
+        height: 24PX;
+        vertical-align: middle;
+        margin-left: 16PX;
+      }
+      .right {
+        position: absolute;
+        width: 24PX;
+        height: 24PX;
+        top: 13PX;
+        right: 15PX;
+      }
+      .text {
+        font-size: 17PX;
+        color: #4A4A4A;
+        letter-spacing: 0;
+        margin-left: 18PX;
+      }
+    }
+  }
+}
