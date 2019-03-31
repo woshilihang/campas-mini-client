@@ -15,9 +15,16 @@ class TopicItem extends Component {
     super(...arguments);
     this.state = {}
   }
+
+  handleClick() {
+    Taro.navigateTo({
+      url: '/pages/detail/detail'
+    })
+  }
+
   render() {
     return (
-      <View className='topic-topicItem'>
+      <View className='topic-topicItem' onClick={this.handleClick.bind(this)}>
         <View className='head'>
           <View className='left'>
             <Image className='head-img' src='https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2425988043,2484997674&fm=27&gp=0.jpg000' />

@@ -40,10 +40,10 @@ class TopicList extends Component {
             <Topic />
           </AtTabsPane>
           <AtTabsPane current={this.state.current} index={1}>
-            <View style='padding: 100px 50px;background-color: #FAFBFC;text-align: center;' >标签页二的内容</View>
+            <View style='padding: 100px 50px;background-color: #FAFBFC;text-align: center;' >寻物寻主</View>
           </AtTabsPane>
           <AtTabsPane current={this.state.current} index={2}>
-            <View style='padding: 100px 50px;background-color: #FAFBFC;text-align: center;' >标签页三的内容</View>
+            <View style='padding: 100px 50px;background-color: #FAFBFC;text-align: center;' >免费专区</View>
           </AtTabsPane>
         </AtTabs>
       </View>

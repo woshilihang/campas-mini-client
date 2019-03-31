@@ -1,16 +1,13 @@
-import Taro, { Component } from '@tarojs/taro'
+import Taro, {
+  Component
+} from '@tarojs/taro'
 import {
   View,
-  Image,
   Button
 } from '@tarojs/components'
 import {
   connect
 } from '@tarojs/redux'
-
-import './authorization.scss'
-import logo from '../../assets/img/logo1.png'
-
 
 import {
   base
@@ -20,18 +17,14 @@ import {
   showMessage
 } from '../../util/common'
 
-class Authorization extends Component {
-
-  config = {
-    navigationBarTitleText: '授权'
-  }
-
+class Test extends Component {
   constructor() {
     super(...arguments);
     this.state = {
-      text: '获取微信授权登录'
+      text: '登录'
     }
   }
+
 
   confirmModal(userInfo) {
     if (!userInfo.detail.rawData || !userInfo.detail.signature) {
@@ -86,7 +79,7 @@ class Authorization extends Component {
                 }
               },
               fail: function(err) {
-                showMessage('网络异常');
+                showMessage('网络异常' + err);
               }
             })
           }
@@ -96,18 +89,17 @@ class Authorization extends Component {
   }
 
   render() {
-    return (
-      <View className='page'>
-        <Image className='img' src={logo} />
-        <Button className='page-button' 
+    return ( 
+      <View>
+        <Button className = 'page-button'
           openType='getUserInfo'
           onGetUserInfo={this.confirmModal.bind(this)}
         >
-          {this.state.text}
+          { this.state.text } 
         </Button>
       </View>
     )
   }
 }
 
-export default Authorization;
+export default Test;

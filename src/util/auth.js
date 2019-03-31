@@ -30,7 +30,7 @@ async function getAuthToken() {
   let res = await Taro.login();
   // 获取Token
   let response = await Taro.request({
-    url: `${state.app.baseURL}api/xxx/xxx`,
+    url: `${state.app.baseURL}/login`,
     data: {
       code: res.code
     },

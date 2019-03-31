@@ -65,7 +65,6 @@ class Index extends Component {
     const { banner } = this.props;
     return (
       <View className='index'>
-       {/* <ScrollView className='index' style={{height: '650PX'}} onScrollToLower={this.onScrollToLower.bind(this)} scrollY='true'> */}
         <View className='search-box'>
           <View className='input-Wrapper'>
             <Image alt='search' className='search-icon' src={require('../../assets/img/search.png')} />
@@ -76,7 +75,6 @@ class Index extends Component {
         <MySwiper banner={banner} />
         <PopSwiper banner={banner} />
         <TopicList />
-      {/* </ScrollView> */}
       </View>
     )
   }

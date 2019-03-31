@@ -1,0 +1,146 @@
+.detail {
+  background-color: rgb(240, 239, 244);
+  position: relative;
+  padding-bottom: 50PX;
+  &-info {
+    margin-bottom: 6PX;
+    padding: 10PX 10PX 15px;
+    background-color: #ffffff;
+    border-top: 2px solid rgb(240, 239, 244);
+    &-desc {
+      height: 40PX;
+      line-height: 40PX;
+      display: flex;
+      justify-content: space-between;
+      &-title {
+        font-size: 18PX;
+        font-weight: 600;
+      }
+      &-price {
+        color: red;
+      }
+    }
+    &-tags {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      &-item {
+        border-radius: 8PX;
+        padding: 3PX 12PX;
+        font-size: 13PX;
+        background-color: aquamarine;
+        color: #ffffff;
+        margin-right: 8PX;
+      }
+      &-item:nth-child(1) {
+        background-color: #cccccc;
+      }
+    }
+  }
+
+  &-seller {
+    margin-bottom: 6PX;
+    padding: 10PX 10PX 15px;
+    background-color: #ffffff;
+    border-top: 2px solid rgb(240, 239, 244);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 13PX;
+    .left {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      image {
+        width: 50PX;
+        height: 50PX;
+        border-radius: 50%;
+        margin-right: 8PX;
+      }
+      .detail-seller-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text {
+          padding-bottom: 8px;
+        }
+      }
+    }
+    .right {
+      width: 90PX;
+      text-align: center;
+      vertical-align: middle;
+      padding-top: 8PX;
+      display: flex;
+      flex-direction: column;
+      border-left: 2PX solid rgb(240, 239, 244);
+    }
+  }
+
+  &-content, &-comment {
+    margin-bottom: 6PX;
+    padding: 10PX 10PX 15px;
+    background-color: #ffffff;
+    border-top: 2px solid rgb(240, 239, 244);
+    font-size: 13PX;
+    &-title {
+      height: 28PX;
+      line-height: 28PX;
+      border-bottom: 2PX solid rgb(240, 239, 244);
+    }
+    &-desc {
+      text-indent: 8PX;
+      line-height: 20PX;
+      padding: 8PX 0;
+    }
+  }
+
+  &-comment {
+    margin-bottom: 0;
+    border-bottom: 2PX solid rgb(240, 239, 244);
+    &-title {
+      font-size: 14PX;
+      line-height: 28PX;
+      padding: 5PX 0;
+    }
+    .isComment {
+      height: 80PX;
+      line-height: 80PX;
+      text-align: center;
+      color: #555555;
+    }
+  }
+
+  .detail-fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50PX;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    z-index: 10001;
+    border-top: 2px solid rgb(240, 239, 244);
+    &-item {
+      font-size: 13PX;
+      flex: 1;
+      text-align: center;
+      border-right: 2px solid rgb(240, 239, 244);
+      image {
+        width: 26PX;
+        height: 26PX;
+        margin-right: 8PX;
+        vertical-align: middle;
+      }
+      text {
+        vertical-align: middle;
+        font-size: 15PX;
+      }
+    }
+  }
+  
+}

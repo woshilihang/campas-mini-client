@@ -12,4 +12,4 @@ export const HTTP_STATUS = {
 };
 
 // 配置base url
-export const base = 'http://localhost:5000/api/';
+export const base = 'http://localhost:5000/api';

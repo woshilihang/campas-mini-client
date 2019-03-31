@@ -2,7 +2,7 @@ import * as constances from '../constants/app'
 
 const INITIAL_STATE = {
   // 请求接口地址
-  baseURL: 'https://xx.xx.xx/',
+  baseURL: 'http://localhost:5000/api',
   // 应用首次加载
   appOnLaunch: true,
   // 请求token

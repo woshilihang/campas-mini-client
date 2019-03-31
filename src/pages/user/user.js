@@ -36,9 +36,9 @@ class User extends Component {
 
   componentDidShow () { 
     if(Taro.getStorageSync('userInfo')) {
-      let userInfo = JSON.parse(Taro.getStorageSync('userInfo'));
+      let userInfo = Taro.getStorageSync('userInfo');
       this.setState({
-        avatar: userInfo.avatar_url,
+        avatar: userInfo.avatarUrl,
         userName: userInfo.name
       })
     }

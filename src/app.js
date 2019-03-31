@@ -23,9 +23,12 @@ class App extends Component {
 
   config = {
     pages: [
-      'pages/publish/publish',
+      
       'pages/index/index',
       'pages/authorization/authorization',
+      'pages/publish/publish',
+     'pages/detail/detail',
+      
       'pages/login/login',
       'pages/search/search',
    
@@ -33,8 +36,8 @@ class App extends Component {
       'pages/version/version',
       'pages/about/about',
       'pages/myPublish/myPublish',
-      'pages/collection/collection'
-      
+      'pages/collection/collection',
+      'pages/test/test',
     ],
     window: {
       backgroundTextStyle: 'light',
